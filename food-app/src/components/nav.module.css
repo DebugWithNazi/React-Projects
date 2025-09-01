@@ -1,0 +1,10 @@
+.nav {
+  font-size: 2rem;
+  font-family: arial, helvetica, sans-serif;
+  font-weight: bold;
+  color: #393e46;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.5);
+  margin-top: 0px;
+}
