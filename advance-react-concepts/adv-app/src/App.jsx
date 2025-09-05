@@ -9,6 +9,10 @@ import Settings from "./components/pages/Settings";
 import Reducer from "./components/Reducer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Products from "./components/pages/Products";
+import Checkout from "./components/Checkout";
+import Login from "./components/Login";
+import { UserProvider } from "./components/context/UserContext";
+import Logout from "./components/Logout";
 
 function App() {
   return (
@@ -17,6 +21,12 @@ function App() {
       {/* <Balance /> */}
       <BrowserRouter>
         <Nav />
+        <UserProvider>
+          <Login />
+          <Checkout />
+          <Logout />
+        </UserProvider>
+
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/Products/:id" element={<Products />} />
