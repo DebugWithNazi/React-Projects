@@ -9,10 +9,10 @@ export default function Todo() {
   const total = todos.length;
 
   return (
-    <div>
+    <>
       <Form todos={todos} setTodos={setTodos} />
       <TodoList todos={todos} setTodos={setTodos} />
       <Footer completed={completed} total={total} />
-    </div>
+    </>
   );
 }
